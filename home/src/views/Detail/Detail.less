@@ -1,0 +1,192 @@
+// 引入样式
+@import url(../../base.less);
+
+.page-detail {
+    .image-container {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 40px;
+            line-height: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            padding: 0 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .status {
+        background: #fff;
+        padding: 15px;
+        position: relative;
+        color: #666;
+        font-size: 16px;
+
+        .teacher {
+            margin-bottom: 6px;
+
+            strong {
+                font-size: 20px;
+                color: #000;
+                font-weight: normal;
+            }
+        }
+
+        .sales {
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #f30;
+            margin-right: 10px;
+        }
+
+        .buy-btn {
+            position: absolute;
+            right: 15px;
+            top: 27px;
+            padding: 4px 12px;
+            color: #fff;
+            background: #f30;
+            border-radius: 4px;
+            font-size: 12px;
+
+            &.has-buy {
+                color: #333;
+                background: #efefef;
+            }
+        }
+    }
+
+    .content {
+        margin-top: 10px;
+        background: #fff;
+        padding-bottom: 70px;
+
+        .nav {
+            padding-top: 10px;
+            line-height: 50px;
+            height: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+
+            span {
+                display: inline-block;
+                font-size: 18px;
+                padding: 0 10px;
+                margin: 0 10px;
+                border-bottom: 2px solid transparent;
+
+                &.choose {
+                    color: #f30;
+                    border-bottom-color: #f30;
+                }
+            }
+        }
+
+        .intro {
+            padding: 0 15px;
+
+            h1 {
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+
+        .menu {
+            padding: 0 15px;
+
+            .menu-item {
+                border-bottom: 1px solid #ccc;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 50px;
+                font-weight: normal;
+                position: relative;
+                padding-left: 10px;
+
+                // background: yellow;
+                &:before,
+                &:after {
+                    .arrow(10px, #000, right);
+                    content: '';
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                &:after {
+                    right: 13px;
+                    border-right-color: #fff;
+                }
+            }
+
+            li {
+                border-bottom: 1px dashed #ccc;
+                line-height: 40px;
+                font-size: 16px;
+                position: relative;
+                padding-left: 10px;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 15px;
+                    top: 8px;
+                }
+
+                &:before {
+                    padding: 10px;
+                    font-size: 0;
+                    border: 2px solid #f30;
+                    background: rgba(0, 0, 0, 0.6);
+                    border-radius: 50%;
+                }
+
+                &:after {
+                    .arrow(8px, #f30, right);
+                    right: 23px;
+                    top: 13px;
+                }
+            }
+
+            .show {
+                h2 {
+
+                    &:before,
+                    &:after {
+                        .arrow();
+                    }
+
+                    &:after {
+                        right: 15px;
+                        top: 13px;
+                        border-top-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
