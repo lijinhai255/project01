@@ -205,3 +205,28 @@ server 服务器端
 
   将前端交互产生的数据,存储再数据库中
   将数据中存储的数据,交给前端进行展示
+
+
+## 后台管理系统
+  基于React 以及ui实现课程后台管理系统
+#### 技术架构
+      使用React，Jsx，redux，riuter，异步action ，ant-mobile，less，ES6，EsModule webpack 等技术 实现移动端后台管理系统
+#### 目录部署
+      admin  后台目录
+        public  静态资源 
+          index.html 入口文件
+        src  开发目录
+          views 所有的页面
+          components 所有的组件
+          tools 工作组件
+          store store模块
+          reducer reducer模块
+          action  action模块  
+          consts 常量
+          App 应有程序组件
+          main.jsx 入口文件按
+          base.less 样式库文件
+      webpack.config,js webpack 配置文件    
+
+    
+
