@@ -191,5 +191,17 @@ showNavContent() {
 
 > 目录部署
 server 服务器端
-  adim  
+  adim  后台请求
+  data  移动端请求
+  router 路由模块
+  consts  配置信息
+  middleware 中间件
+  server 服务器
+  page 页面请求
+  db  数据库的封装 
+  app.js 
 
+#### 服务器本质
+
+  将前端交互产生的数据,存储再数据库中
+  将数据中存储的数据,交给前端进行展示
